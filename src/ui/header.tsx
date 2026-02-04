@@ -9,7 +9,7 @@ export default function Header() {
         <AntDesign name="arrow-left" size={24} color="black" />
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.logo}>Group Profile</Text>
+        <Text style={styles.logo}>Group Profiles</Text>
         <Text style={styles.logoSub}>ootd_everyday</Text>
       </View>
       <View style={styles.headerIcons}>

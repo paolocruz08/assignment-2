@@ -1,7 +1,7 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Avatartab() {
+export default function AvatarTab() {
   return (
     <View style={styles.container}>
       <View style={styles.avatarTab}>
