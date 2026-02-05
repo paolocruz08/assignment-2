@@ -7,11 +7,11 @@ import { StyleSheet, View } from "react-native";
 export default function MenuBar() {
   return (
     <View style={styles.menuBar}>
-      <Ionicons name="home-outline" size={24} color="black" />
-      <Ionicons name="search" size={24} color="black" />
-      <AntDesign name="plus" size={24} color="black" />
-      <Ionicons name="bag" size={24} color="black" />
-      <MaterialCommunityIcons name="account-circle" size={24} color="black" />
+      <Ionicons name="home-outline" size={30} color="black" />
+      <Ionicons name="search" size={30} color="black" />
+      <AntDesign name="plus" size={30} color="black" />
+      <Ionicons name="bag" size={30} color="black" />
+      <MaterialCommunityIcons name="account-circle" size={30} color="black" />
 </View>
   );
 }
@@ -20,5 +20,8 @@ const styles = StyleSheet.create({
   menuBar: {
     flexDirection: "row",
     justifyContent: "space-between",
+    height: 40,
+    paddingTop: 10,
+    paddingHorizontal: 10,   
   },
 });
