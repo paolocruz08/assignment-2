@@ -5,11 +5,11 @@ export default function AvatarTab() {
   return (
     <View style={styles.container}>
       <View style={styles.avatarTab}>
-        <FontAwesome name="user-circle-o" size={90} color="black" />
+        <FontAwesome name="user-circle-o" size={115} color="black" />
 
         <View style={styles.stats}>
           <View style={styles.statItem}>
-            <Text style={styles.statNumber}>53</Text>
+            <Text style={styles.statNumber}>54</Text>
             <Text style={styles.statLabel}>Posts</Text>
           </View>
           <View style={styles.statItem}>
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
   avatarTab: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 16,
+    marginBottom: 12,
   },
   stats: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-around",
-    marginLeft: 24,
+    marginLeft: 5,
   },
 
   statItem: {
@@ -57,37 +57,42 @@ const styles = StyleSheet.create({
   },
 
   statNumber: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
   },
 
   statLabel: {
-    fontSize: 13,
+    fontSize: 15,
     color: "#666",
   },
 
   profileDescription: {},
 
   profileName: {
-    fontSize: 14,
+    fontSize: 20,
     fontWeight: "bold",
     marginBottom: 2,
   },
 
   bio: {
-    fontSize: 14,
+    fontSize: 15,
     lineHeight: 18,
   },
 
   memberButton: {
-    padding: 10,
-    marginVertical: 10,
+    padding: 7,
+    marginTop: 15,
+    marginBottom: 2,
     borderWidth: 1,
     borderRadius: 5,
+    borderColor: "rgba(0, 0, 0, 0.2)",
     width: "100%",
   },
 
   memberText: {
     textAlign: "center",
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 15,
   }
 });

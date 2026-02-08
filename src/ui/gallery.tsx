@@ -1,28 +1,44 @@
+import { Image } from "expo-image";
 import { Button, Dimensions, ScrollView, StyleSheet, View } from "react-native";
 
 export default function Gallery() {
+  const images = [
+    "https://picsum.photos/id/14/367/267",
+    "https://picsum.photos/id/15/367/267",
+    "https://picsum.photos/id/17/367/267",
+    "https://picsum.photos/id/16/367/267",
+    "https://picsum.photos/id/18/367/267",
+    "https://picsum.photos/id/20/367/267",
+    "https://picsum.photos/id/21/367/267",
+    "https://picsum.photos/id/22/367/267",
+    "https://picsum.photos/id/24/367/267",
+    "https://picsum.photos/id/26/367/267",
+    "https://picsum.photos/id/28/367/267",
+    "https://picsum.photos/id/27/367/267",
+    "https://picsum.photos/id/29/367/267",
+    "https://picsum.photos/id/33/367/267",
+    "https://picsum.photos/id/34/367/267",
+    "https://picsum.photos/id/36/367/267",
+    "https://picsum.photos/id/37/367/267",
+    "https://picsum.photos/id/39/3456/2304",
+    "https://picsum.photos/id/41/367/267",
+    "https://picsum.photos/id/43/367/267",
+    "https://picsum.photos/id/48/367/267",
+  ];
+
   return (
     <View style={{ flex: 1 }}>
       <ScrollView>
         <View style={styles.imageContainer}>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
-          <View style={styles.images}></View>
+          {images.map((img, index) => (
+            <View key={index} style={styles.images}>
+              <Image
+                source={{ uri: img }}
+                style={styles.imageContent}
+                contentFit="cover"
+              />
+            </View>
+          ))}
         </View>
       </ScrollView>
 
@@ -36,40 +52,30 @@ export default function Gallery() {
     </View>
   );
 }
+
 const screenWidth = Dimensions.get("window").width;
-const imageWidth = screenWidth / 3;
+const gap = 1;
+const imageWidth = (screenWidth - (gap * 2)) / 3;
 
 const styles = StyleSheet.create({
   imageContainer: {
     flexDirection: "row",
     flexWrap: "wrap",
+    gap: 1,
   },
   images: {
     width: imageWidth,
     height: imageWidth,
     backgroundColor: "#e0e0e0",
-    borderWidth: 1,
-    borderColor: "black",
   },
-  floatingButton: {
-    position: "absolute",
-    bottom: 20,
-    right: 20,
-    backgroundColor: "#0095f6",
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: 25,
-    elevation: 5,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    zIndex: 999,
+  imageContent: {
+    width: "100%",
+    height: "100%",
   },
   floatingButtonContainer: {
     position: "absolute",
+    width: "40%",
     bottom: 20,
-    left: 20,
     right: 20,
   },
 });

@@ -9,7 +9,7 @@ export default function Header() {
         <AntDesign name="arrow-left" size={24} color="black" />
       </View>
       <View style={styles.nameContainer}>
-        <Text style={styles.logo}>Group Profiles</Text>
+        <Text style={styles.logo}>Group Profile</Text>
         <Text style={styles.logoSub}>ootd_everyday</Text>
       </View>
       <View style={styles.headerIcons}>
@@ -26,22 +26,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 10,
-    borderBottomWidth: 0.5,
-    borderBottomColor: "#ddd",
+    marginBottom: 7,
   },
 
   nameContainer: {
     alignItems: "center",
+    marginBottom: -5,
   },
 
   logo: {
-    fontSize: 30,
+    fontSize: 28,
     fontWeight: "bold",
     fontFamily: "comic-sans",
   },
 
   logoSub: {
     opacity: 0.5,
+    lineHeight: 15,
   },
 
   headerIcons: {
