@@ -73,3 +73,4 @@ const styles = StyleSheet.create({
     right: 20,
   },
 });
+>>>>>>>>> Temporary merge branch 2
