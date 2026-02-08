@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
   menuBar: {
     flexDirection: "row",
     justifyContent: "space-between",
-    height: 40,
-    paddingTop: 10,
-    paddingHorizontal: 10,   
-  },
+    alignContent: "center",
+    paddingBottom: 10,
+    paddingHorizontal: 30,
+    marginVertical: 15,
+  }, 
 });
