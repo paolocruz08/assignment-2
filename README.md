@@ -1,6 +1,6 @@
 # This is Assignment 2 for CPRG303-A Mobile Development
 
-@authors:
+@authors:</br>
 Paolo Cruz</br>
 Huddwin Almeida
 
