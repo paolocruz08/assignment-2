@@ -28,6 +28,10 @@ export default function AvatarTab() {
         <Text style={styles.bio}>Fit Check! 🎽</Text>
         <Text style={styles.bio}>You know we'll hype you up.</Text>
       </View>
+
+      <View style={styles.memberButton}>
+        <Text style={styles.memberText}>Member ▼</Text>
+      </View>
     </View>
   );
 }
@@ -74,4 +78,16 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 18,
   },
+
+  memberButton: {
+    padding: 10,
+    marginVertical: 10,
+    borderWidth: 1,
+    borderRadius: 5,
+    width: "100%",
+  },
+
+  memberText: {
+    textAlign: "center",
+  }
 });
