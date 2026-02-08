@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 16,
     paddingVertical: 10,
-    borderBottomWidth: 0.5,
+    marginBottom: 7,
   },
 
   nameContainer: {
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
 
   logo: {
-    fontSize: 30,
+    fontSize: 28,
     fontWeight: "bold",
     fontFamily: "comic-sans",
   },
