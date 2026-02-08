@@ -36,7 +36,6 @@ export default function Gallery() {
     </View>
   );
 }
-
 const screenWidth = Dimensions.get("window").width;
 const imageWidth = screenWidth / 3;
 
