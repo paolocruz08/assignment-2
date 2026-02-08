@@ -5,7 +5,7 @@ export default function AvatarTab() {
   return (
     <View style={styles.container}>
       <View style={styles.avatarTab}>
-        <FontAwesome name="user-circle-o" size={90} color="black" />
+        <FontAwesome name="user-circle-o" size={100} color="black" />
 
         <View style={styles.stats}>
           <View style={styles.statItem}>
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   avatarTab: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 16,
+    marginBottom: 12,
   },
   stats: {
     flex: 1,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   profileDescription: {},
 
   profileName: {
-    fontSize: 14,
+    fontSize: 18,
     fontWeight: "bold",
     marginBottom: 2,
   },
