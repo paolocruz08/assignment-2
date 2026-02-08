@@ -4,6 +4,8 @@
 Paolo Cruz</br>
 Huddwin Almeida
 
+February 2026
+
 The assignment is to build a mockup of the Instagram profile page, for practice with
 native React tags as well as styling properties.
 
