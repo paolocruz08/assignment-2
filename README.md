@@ -1,7 +1,7 @@
 # This is Assignment 2 for CPRG303-A Mobile Development
 
 @authors:
-Paolo Cruz
+Paolo Cruz</br>
 Huddwin Almeida
 
 The assignment is to build a mockup of the Instagram profile page, for practice with
