@@ -54,8 +54,9 @@ export default function Gallery() {
 }
 
 const screenWidth = Dimensions.get("window").width;
-const gap = 1;
-const imageWidth = (screenWidth - (gap * 2)) / 3;
+const gap = 2;
+const numColumns = 3;
+const imageWidth = (screenWidth - (gap * (numColumns - 1))) / numColumns;
 
 const styles = StyleSheet.create({
   imageContainer: {
